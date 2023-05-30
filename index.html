@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <link rel="shortcut icon" href="img/guangzhu.png">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <style>
+        :root {
+            --img-main-size: 360px;
+        }
+
+        body {
+            /* background: url(img/bg1.jpg) no-repeat; */
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+        }
+
+        #main>.img-main {
+            width: var(--img-main-size);
+            height: var(--img-main-size);
+            margin: 0 auto;
+            margin-top: 26px;
+        }
+
+        #touxiang {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        @media (max-width:767px) {
+            #main>.img-main {
+                width: calc(var(--img-main-size) * 0.8);
+                height: calc(var(--img-main-size) * 0.8);
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            #main>.img-main {
+                width: calc(var(--img-main-size) * 0.9);
+                height: calc(var(--img-main-size) * 0.9);
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1199px) {}
+
+        @media (min-width:1200px) {
+            #main>.img-main {
+                width: calc(var(--img-main-size) * 1.1);
+                height: calc(var(--img-main-size) * 1.1);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="menu">
+        <div class="row">
+            <h2><img src="img/dianzan.png" alt="" id="dianzan">Welcome to my website.</h2>
+        </div>
+    </div>
+    <div id="main">
+        <div class="img-main">
+            <img src="img/touxiang.jpg" alt="" id="touxiang">
+        </div>
+    </div>
+    <script>
+        var touxiang = document.getElementById("touxiang");
+        touxiang.onclick = function () {
+        }
+        function onclick_img_change(id, src1, src2) {
+            var flag = true;
+            var img = document.getElementById(id);
+            img.onclick = function () {
+                if (flag) {
+                    img.src = src1;
+                    flag = false;
+                } else {
+                    img.src = src2;
+                    flag = true;
+                }
+            }
+        }
+        onclick_img_change("dianzan", "img/dianzan.png", "img/dianzan-red.png");
+    </script>
+</body>
+
+</html>
