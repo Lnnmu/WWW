@@ -1,0 +1,14 @@
+#footer{
+    --height: 80px;
+    margin: 0 0;
+    height: var(--height);
+    background-color: rgb(60, 60, 60);
+    box-shadow: rgb(62, 62, 62) 0px -2px 5px 1px;
+    margin-top: 200px;
+    color: white;
+    padding: calc(var(--height) / 6) 0;
+}
+#footer h6{
+    text-align: center;
+    font-weight: bold;
+}

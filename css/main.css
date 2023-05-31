@@ -1,0 +1,77 @@
+#main {
+    --img-main-size: 300px;
+    --main-heigh: 400px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+#main .head {
+    /* flex布局 */
+    display: flex;
+    /* 切换主轴为侧轴 */
+    flex-direction: column;
+    /* 主轴上设置居中 */
+    justify-content: center;
+    /* 侧轴上设置居中 */
+    align-items: center;
+    border-radius: 5px;
+    height: var(--main-heigh);
+}
+
+#main .head h3{
+    font-weight: bold;
+}
+
+#main .head h6{
+    font-weight: bold;
+}
+
+#img-main {
+    width: var(--img-main-size);
+    height: var(--img-main-size);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#main .content {
+    height: 100px;
+    background-color: rgba(241, 241, 241, 0.8);
+    border-radius: 5px;
+    height: var(--main-heigh);
+}
+#main .content h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+
+@media (max-width:992px) {
+    #main .head {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    #main .head {
+        margin: 0 auto;
+    }
+
+    #img-main {
+        width: calc(var(--img-main-size) * 0.6);
+        height: calc(var(--img-main-size) * 0.6);
+    }
+
+    #main .head {
+        background-color: rgba(241, 241, 241, 0.8);
+    }
+
+    #main .content {
+        background-color: rgba(197, 197, 197, 0.3);
+    }
+}

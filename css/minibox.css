@@ -1,0 +1,36 @@
+#main .content .minibox{
+    --height:46px;
+    --img-size:30px;
+    /* background-color: rgb(131, 131, 131); */
+    height: 40px;
+    margin-bottom: 20px;
+}
+#main .content .minibox a{
+    display: block;
+    height: var(--height);
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(169, 169, 169) 3px 3px 5px 1px;
+}
+#main .content .minibox a:hover{
+    background-color: rgb(64, 64, 64);
+    color: rgb(227, 227, 227);
+    margin-top: -5px;
+}
+#main .content .minibox a h6{
+    font-weight: bold;
+}
+
+#main .content .minibox .minibox-content img{
+    width: var(--img-size);
+    height: var(--img-size);
+    margin: calc((var(--height) - var(--img-size)) / 2);
+    float: left;
+}
+
+#main .content .minibox .minibox-content h6{
+    float: left;
+    line-height: 46px;
+}
+
