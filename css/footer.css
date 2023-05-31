@@ -4,8 +4,9 @@
     height: var(--height);
     background-color: rgb(60, 60, 60);
     box-shadow: rgb(62, 62, 62) 0px -2px 5px 1px;
-    margin-top: 200px;
     color: white;
+    width: 100%;
+    margin-top: 100px;
     padding: calc(var(--height) / 6) 0;
 }
 #footer h6{
