@@ -10,11 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <style>
         body {
+            min-width: 400px;
             background-size: 100% 100%;
             background-attachment: fixed;
-            background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
-            /* display: flex; */
-            min-height: 100vh;
+            background-image: linear-gradient(to right, #889eff 0%, #ffbbd1 100%);
         }
     </style>
 </head>
@@ -33,7 +32,7 @@
                     <h3>林木(Lnnmu)</h3>
                     <h6>Games/Music/Computers</h6>
                     <h6>QQ：2452139719</h6>
-                    <h6></h6>
+                    <p>zyy9kru502d</p>
                 </div>
                 <div class="content col-md-12 col-lg-8">
                     <h3>Content</h3>
@@ -53,24 +52,12 @@
         </div>
     </div>
     <div id="footer">
-        <h6>欢迎大家来到我的网页9kru502d</h6>
+        <h6>欢迎大家来到我的网页</h6>
         <h6>图片图标皆来自网络,如有侵权请告删之</h6>
     </div>
     <script type="text/javascript" src="js/addminibox.js"></script>
+    <script type="text/javascript" src="js/onclik_img_change.js"></script>
     <script type="text/javascript">
-        function onclick_img_change(id, src1, src2) {
-            var flag = true;
-            var img = document.getElementById(id);
-            img.onclick = function () {
-                if (flag) {
-                    img.src = src2;
-                    flag = false;
-                } else {
-                    img.src = src1;
-                    flag = true;
-                }
-            }
-        }
         onclick_img_change("dianzan", "img/dianzan.png", "img/dianzan-red.png");
         addminibox("https://github.com/Lnnmu","_blank","kafei.png","Github");
         addminibox("/chat","","tiantianquan.png","ChatGPT");
