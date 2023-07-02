@@ -1,0 +1,68 @@
+:root {
+    --height: 500px;
+    --inputheight: 40px;
+    color:rgb(135, 250, 156);
+}
+#main {
+    padding: 20px 20px;
+    width: 86%;
+    /* min-height: 400px; */
+    height:87vh;
+    margin: calc((100vh - 87vh ) / 4) auto;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    position: relative;
+}
+
+.chat-box {
+    width: 100%;
+    height: calc(100% - var(--inputheight));    
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #505054;
+    border-radius: 10px;
+    /* border: 2px solid #0257b1;
+    box-sizing: border-box; */
+    color: #fff;
+}
+
+.user {
+    font-weight: bold;
+    margin: 0;
+}
+
+.text {
+    margin: 0;
+}
+
+.input-box {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: var(--inputheight);
+    border-radius: 5px;
+    /* background-color:white; */
+}
+
+.input-box>input {
+    width: calc(100% - 80px);
+    height: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-box>button {
+    width: 40px;
+    height: 100%;
+    outline:0;
+    /* float: right; */
+    border-radius: 5px;
+}
